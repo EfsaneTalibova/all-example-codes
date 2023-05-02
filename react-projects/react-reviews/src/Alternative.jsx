@@ -4,35 +4,37 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
-
-// console.log(1%4)
-// console.log(2%4)
-// console.log(3%4)
-// console.log(4%4)
-// console.log(5%4)
-
   const prevPerson = () => {
     setIndex((currentIndex) => {
-      const newIndex = (currentIndex - 1 + people.length) % people.length;
-      return newIndex;
+      const newIndex = currentIndex - 1;
+      return checkNumber(newIndex)
     });
   };
   const nextPerson = () => {
     setIndex((currentIndex) => {
-      const newIndex = (currentIndex + 1) % people.length;
-      return newIndex;
+      const newIndex = currentIndex + 1;
+      return checkNumber(newIndex)
     });
   };
 
-  const randomPerson = () => {
-    let randomNumber = Math.floor(Math.random() * people.length);
-
-    if (randomNumber === index) {
-      randomNumber = index + 1;
+  const checkNumber = (number) => {
+    if (number > people.length - 1) {
+      return 0;
     }
-    const newIndex = randomNumber % people.length;
-    setIndex(newIndex);
+    if (number < 0) {
+      return people.length - 1;
+    }
+    return number;
   };
+
+  const randomPerson=()=>{
+     let randomNumber = Math.floor(Math.random()*people.length)
+    
+     if(randomNumber===index){
+      randomNumber=index+1
+     }
+     setIndex(checkNumber(randomNumber))
+  }
   return (
     <main>
       <article className="review">
@@ -53,14 +55,7 @@ const App = () => {
             <FaChevronRight />
           </button>
         </div>
-        <button
-          type="button"
-          className="btn btn-hipster"
-          onClick={randomPerson}
-        >
-          {" "}
-          suprise me
-        </button>
+        <button type="button" className="btn btn-hipster" onClick={randomPerson}> suprise me</button>
       </article>
     </main>
   );
