@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.commonCv{
+    margin: 10px;
+}
+.cvHeader{
+    border: 2px solid black;
+}
+.cvHeader h1{
+    text-align: center;
+}
+.border{
+    border: 1px solid black;
+}
+.labelCls{
+    display: block;
+    min-width: 40%;
+}
+.inputCls{
+    min-width: 60%;
+    padding: 3px;
+}
+.cvItem{
+    display: flex;
+}

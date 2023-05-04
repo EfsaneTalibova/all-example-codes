@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --colorBlue: rgb(84, 245, 119);
+    }
+    .img {
+        width: 300px;
+    }
+
+    .price {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color:var(--colorBlue);
+        color: white;
+        padding: 5px;
+    }
+
+    .image_area {
+        position: relative;
+        width: 300px;
+    }
+
+    .container h2 {
+        text-transform: capitalize;
+    }
+    .items{
+        width: 300px;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .readMore{
+        color: var(--colorBlue);
+        text-transform: capitalize;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="items">
+            <div class="image_area">
+                <img class="img" src="./images/building.jpg" alt="">
+                <span class="price">$1,995</span>
+            </div>
+            <h2>best of paris in 7 days tour</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...<span class="readMore">read more</span> </p>
+        </div>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: yellow;
+      font-size: 10px
+    }
+
+    @media only screen and (min-width: 800px) {
+      body {
+        background-color: lightblue;
+        font-size: 20px
+      }
+
+      .div {
+        display: flex;
+      }
+    }
+
+    .div1 {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+    }
+
+    .div2 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The @media Rule</h1>
+
+  <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is
+    "lightblue", otherwise it is "yellow".</p>
+  <div class="div">
+    <div class="div1">df</div>
+    <div class="div2">sdfa</div>
+  </div>
+
+</body>
+
+</html>

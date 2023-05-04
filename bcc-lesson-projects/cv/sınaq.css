@@ -1,0 +1,23 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}.div2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(171, 110, 110);
+}.div3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 221);
+}.div4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(9, 17, 49);
+}.div5{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(48, 197, 130);
+}
+.commonDiv{display: flex;
+justify-content: space-around;}
