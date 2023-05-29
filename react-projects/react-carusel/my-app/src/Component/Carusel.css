@@ -1,0 +1,66 @@
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343f4f;
+    padding: 4% 8%;
+  }
+  .carouselContainer_wrapper {
+    max-width: 1200px;
+    position: relative;
+  }
+  .carouselContainer_wrapper .carousel_icon {
+    top: 38%;
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    line-height: 46px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    transform: translateY(50%);
+  }
+  
+  .carouselContainer_wrapper .carousel_icon:first-child {
+    left: -23px;
+  }
+  .carouselContainer_wrapper .carousel_icon:last-child {
+    right: -23px;
+  }
+  .carouselContainer_wrapper .carousel_elements {
+    font-size: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+ 
+  .carousel_elements img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  
+  .carousel_elements img:first-child {
+    margin-left: 0px;
+  }
+  
+  @media screen and (max-width:1200px){
+      .carousel_elements img {
+          height: 340px;
+          object-fit: cover;
+          margin-left: 14px;
+          width: calc(100% / 2);
+        }
+  }
+  @media screen and (max-width:600px){
+      .carousel_elements img {
+          height: 340px;
+          object-fit: cover;
+          margin-left: 14px;
+          width: calc(100%);
+        }
+  }
