@@ -24,6 +24,7 @@ const Carusel = () => {
     e.preventDefault();
     let positionDiff = e.pageX - prevPageX;
     carouselRef.current.scrollLeft = prevScrollLeft - positionDiff;
+    
   };
 
   const dragStop = () => {
